@@ -1,11 +1,12 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Switch, Route, Link } from "react-router-dom";
-import Navbars from "./components/Navbars";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div>
-      <Navbars />
+    <div className="flex flex-col justify-between bg-gray-200 min-h-screen">
+      <Navbar />
+      <Footer />
     </div>
   );
 }
