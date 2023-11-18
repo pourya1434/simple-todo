@@ -4,7 +4,11 @@ function Navbar() {
   return (
     <header className="text-gray-600 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <a
+          href="#"
+          className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 sm:hidden md:flex"
+        >
+          {" "}
           {/* Logo */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +24,6 @@ function Navbar() {
               d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"
             />
           </svg>
-
           <span className="ml-3 text-xl">Todo</span>
         </a>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
@@ -45,7 +48,7 @@ function Navbar() {
             </a>
           </div>
         </nav>
-        <button className="inline-flex items-center bg-blue-400 text-white border-0 py-3 px-6 focus:outline-none hover:bg-blue-600 rounded text-base mt-4 md:mt-0">
+        <button className="inline-flex items-center bg-gray-800 text-white font-semibold text-xl border-0 py-3 px-6 focus:outline-none hover:bg-blue-600 rounded  mt-4 md:mt-0 sm:w-full sm:justify-center sm:rounded-lg md:w-auto">
           Join us
         </button>
       </div>
